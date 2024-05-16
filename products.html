@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- fontawesome CDN  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <!-- CSS Styleing sheet  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jquery cdn  -->
+  <script src="	https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>  Elements - Awwards</title>
+  <link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+  <!-- text scroller starts -->
+  <div id="scroller" class="sc1">
+    <div class="scroller-in">
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+    </div>
+    <div class="scroller-in">
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+      <h4>Flash Sale 9.99 ALL COURSES</h4>
+    </div>
+  </div>
+  <!-- text scroller ends -->
+  <!-- search bar starts here  -->
+  <div class="container-fluid search-div flex-row flex-lg-row flex-md-row justify-content-center ps-lg-5 pe-lg-5"
+    style="background: none;">
+
+    <div class="part-1 d-flex">
+      <a href="index.html"> <img src="images/logo.png" alt="logo" class="logo pe-2 d-inline-flex"></a>
+
+      <form class="d-flex search-box rounded  w-100 ms-2">
+        <input class="form-control border-0 bg-transparent  w-100" type="search" placeholder="Search in inspiration"
+          aria-label="Search">
+
+
+
+        <button class=" btn d-sm-none d-md-block d-none d-sm-block" type="submit">In</button>
+
+        <div class="dropdown d-sm-none d-md-block d-none d-sm-block">
+          <a class="btn  dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Inspiration
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Website</a></li>
+            <li><a class="dropdown-item" href="#">Element</a></li>
+            <li><a class="dropdown-item" href="#">Collection</a></li>
+          </ul>
+        </div>
+
+      </form>
+    </div>
+    <div class="buttons-div ">
+      <div class="buttons d-flex  flex-row  ">
+        <a href="login.html"> <button class=" btn d-sm-none d-md-block d-none d-sm-block" type="submit">Log In</button></a>  
+
+        <a href="register.html"><button class=" btn d-sm-none d-md-block d-none d-sm-block" type="submit">Sign Up</button></a> 
+        <a href="propage.html">
+          <button class=" btn btn btn-dark  d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block"
+              type="submit">Be
+              Pro</button>
+          </a>
+          <a href="submitWebsite.html">
+          <button class=" btn btn btn-light  d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block"
+              type="submit">Submit Website</button> </a>
+      </div>
+      <div class="d-md-none"> <!-- This div is only displayed on mobile -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarToggleExternalContent">
+          <div class="offcanvas-header bg-light position-relative p-4">
+            <div class="text-toggle d-flex flex-column justify-content-center">
+              <h5 class="offcanvas-title ">Welcome! <i class="fa-solid fa-face-smile" style="color: #ff621f; "></i>
+              </h5>
+              <span class="text-muted"> Not a member yet?</span>
+              <p><a href="#" class="text-danger  border-3 border-bottom"> Register Now</a></p>
+            </div>
+            <button type="button" class="btn-close text-reset bg-dark p-4 position-absolute  top-0 end-0"
+              data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+          </div>
+          <div class="offcanvas-body d-flex flex-column ">
+            <div class="form-login">
+              <h3>Log In</h3>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+            </div>
+            <div class="other-signin p-2 mt-3">
+              <h6 class="text-muted">Or sign in with</h6>
+              <div class="d-grid gap-2 col-12 mx-auto">
+                <button class="btn btn-outline-secondary" type="button">Google</button>
+                <button class="btn btn-outline-secondary" type="button">Facebook</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-dark " style="background-color: transparent;">
+          <div class="container-fluid p-0">
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- search bar ends here  -->
+ <!-- Collection section starts here  -->
+ <div class="text-section d-flex flex-column justify-content-center align-items-center 
+ position-relative p-5 ">
+       <P>latest</P>
+       <h2 class="">Products</h2>
+      
+       <button class="btn  btn-warning p-lg-3 p-md-2 btn-txt d-none d-sm-block d-sm-none d-md-block">COOL
+         Products!</button>
+     </div>
+ <div class="container pb-5">
+    <div class="row pt-3 ">
+        <div class="col-lg-4 col-md-6 col-12 p-3">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Botanical | E-Commerce Kit Template</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body  d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-3">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Chow Down | Restaurant UI KIT</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-3 d-none d-sm-block	d-sm-none d-md-block	d-md-none d-lg-block">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Stone - Portfolio UI KIT Template</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body  d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="row pt-3 ">
+        <div class="col-lg-4 col-md-6 col-12 p-3">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Botanical | E-Commerce Kit Template</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body  d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-3">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Chow Down | Restaurant UI KIT</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-3 d-none d-sm-block	d-sm-none d-md-block	d-md-none d-lg-block">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Stone - Portfolio UI KIT Template</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body  d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="row pt-3 ">
+        <div class="col-lg-4 col-md-6 col-12 p-3">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Botanical | E-Commerce Kit Template</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body  d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-3">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Chow Down | Restaurant UI KIT</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 p-3 d-none d-sm-block	d-sm-none d-md-block	d-md-none d-lg-block">
+          <div class="card" style="border-radius: 4%;">
+            <img src="images/p4-card-img-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Digital Product</p>
+              <h5 class="card-title">Stone - Portfolio UI KIT Template</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <div class="flex-li d-flex justify-content-between p-3 pt-4">
+                <p class="">By skolastika phoebe</p>
+                <p class="">from 23 USD</p>
+              </div>
+            </ul>
+            <a href="#">
+              <div class="card-body  d-flex gap-2 align-items-center">
+                <a href="#" class="text-dark">View Product</a>
+                <a href="#" class=" fs-3 fw-bolder text-dark">→</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+ </div>
+ <!-- Collection section ends here  -->
+ <!-- footer starts here  -->
+  <footer class="footer p-5 border-top ">
+    
+    
+    <div class="wrapper d-flex flex-md-column flex-column flex-wrap">
+   
+ <div class="rows d-flex justify-content-around flex-wrap"> 
+   
+  <div class="col1 d-flex flex-column justify-content-start align-items-start flex-wrap">     
+    <img src="images/logo.png" style="width: 30px;" class="  d-none d-sm-block d-sm-none d-md-block" alt="">
+
+    <a href="index.html" class="text-dark fw-bold p-2">Websites</a>
+    <a href="#" class="text-dark fw-bold p-2">Collections</a>
+  </div>
+  <div class="d-none d-sm-block d-sm-none d-md-block">
+  <div class="col1 d-flex flex-column justify-content-start align-items-start flex-wrap ">
+    <a href="#" class="text-dark fw-bold p-2">Academy</a>
+    <a href="#" class="text-dark fw-bold p-2">Design</a>
+  </div>
+</div>
+  <div class="d-none d-sm-block d-sm-none d-md-block">
+  <div class="col1 d-flex flex-column justify-content-start align-items-start flex-wrap ">
+    <a href="elements.html" class="text-dark fw-bold p-2">Awwards</a>
+    <a href="blog.html" class="text-dark fw-bold p-2">Blogs</a>
+  </div>
+</div>
+  <div class="col1 d-flex flex-column justify-content-start align-items-start flex-wraps">
+    <a href="index.html" class="text-dark fw-bold p-2">Directory</a>
+    <a href="#" class="text-dark fw-bold p-2">Conference</a>
+    <a href="#" class="text-dark fw-bold p-2">FAQs</a>
+  </div>
+  </div>
+
+  <button class="btn btn-light p-4"> Next Conference  Amsterdam</button>
+
+</div>
+
+ </footer> 
+ <!-- footer ends here  -->
+ <div class="menu container "   id="hiddenContent">
+    <div class="drop-up-menu container">
+   <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4 col-content">
+      <div class="part-content">
+        <ul >
+          <li> <a href="winners.html">Winners</a> </li>
+          <li><a href="nominees.html">Nominees</a> </li>
+          <li><a href="siteoftheday.html">Site of the day</a> </li>
+          <li><a href="siteofthemonth.html">Site of the month</a> </li>
+          
+        </ul>
+      </div>
+      <div class="part-content d-none d-none d-sm-block d-sm-none d-md-block">
+        <ul >
+          <li>  <a href="collection.html">Collection</a> </li>
+          <li>  <a href="elements.html">Elements</a> </li>
+          <li> <a href="frelancers.html">Freelancers</a> </li>
+        
+        </ul>
+      </div>
+      <div class="part-content d-none d-none d-sm-block d-sm-none d-md-block">
+        <ul >
+          <li> <a href="blog.html">Blogs</a> </li>
+         
+          <li>  <a href="products.html">Products</a> </li>
+        </ul>
+      </div>
+      
+      
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark d-flex justify-content-around">
+    <div class="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div>
+      <button class="btn btn-dark border "><a href="index.html" class="text-light">Home</a></button>
+    </div>
+    <div>
+      <button class="btn btn-dark border "><a href="blog.html" class="text-light">Blog</a></button>
+    </div>
+    <div>
+      <button class="btn btn-dark border d-none d-none d-sm-block d-sm-none d-md-block"><a href="nominees.html" class="text-light">Nominees</a></button>
+    </div>
+    <div>
+      <button class="btn btn-dark border d-none d-none d-sm-block d-sm-none d-md-block"><a href="propage.html" class="text-light">Directory</a></button>
+    </div>
+  </nav>
+</div>
+</div>
+<!-- arrow button  -->
+<div class="top-arrow">
+  <a  onclick="topFunction()" id="myBtn" class="btn btn-outline-dark  ps-4 pt-1 pb-1 pe-4 fs-1 fw-bolder">↑</a>
+  </div>
+  <!-- blog-heading-image ends here  -->
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  -->
+
+  <!-- gsap cdn  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- scrollTriger CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Swiper JS CDN  -->
+  <script src="swiper-bundle.min.js"></script>
+  <!-- javascript  -->
+  <script src="script.js"></script>
+</body>
+
+</html>

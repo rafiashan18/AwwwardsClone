@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #000;
+  /* overflow: hidden; */
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+/* loader styling  */
+#loader {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.line {
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+  /* Adjust the thickness of the lines as needed */
+  background-color: #fff;
+  /* Line color */
+  animation-duration: 2s;
+  /* Animation duration */
+  animation-timing-function: linear;
+  /* Linear animation */
+  /* animation-iteration-count: infinite; Infinite loop */
+  animation-fill-mode: forwards;
+  /* Keep the final animation state */
+}
+#line1 {
+  top: 5%;
+}
+#line2 {
+  bottom: 5%;
+}
+.line.left-to-right {
+  left: 0%;
+  animation-name: growLeftToRight;
+}
+
+.line.right-to-left {
+  right: 0%;
+  animation-name: growRightToLeft;
+}
+@keyframes growLeftToRight {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes growRightToLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+#loader h1 {
+  font-size: 100px;
+}
+/* page styling  */
+.main{
+  position: relative;
+}
+.page1 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #E9E9E9;
+  padding: 0 3vw;
+ 
+}
+
+/* scrollbar CSS Styling  */
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+  
+}
+.sc1{
+  background-color: #F02D00;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller h4 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "helvetica";
+  margin-right: 10px;
+  color: transparent;
+  /* -webkit-text-stroke: 2px #95c11e; */
+  transition: color 0.5s ease-in-out;
+  color: #fff;
+}
+/* this code is not working  */
+
+.scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 50s linear infinite;
+  padding-top: 15px;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.search-div {
+  /* height: 10vh; */
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 2vh 1vw;
+  background-color: #E9E9E9;
+}
+.form-control:hover {
+  border: none;
+}
+.part-1 {
+  flex: 1; /* Use flex property to make part-1 take up available space */
+}
+.search-box {
+  border: 1px solid #dadada;
+  width: 100%;
+  background-color: #dadada;
+  flex: 1;
+}
+.logo {
+  height: 40px;
+  width: 40px;
+}
+.main-text h1 {
+  text-align: center;
+  /* padding: 30px; */
+  font-size: 10vmax;
+  font-weight: 900;
+}
+.page1-scroller .scroller-in{
+  background-color: #E9E9E9 !important;
+}
+.page1-scroller .scroller-in h4 {
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  padding-left: 5px !important;
+}
+.img-section {
+  height: 90vh;
+ margin: 4vh 0vw;
+}
+
+.img-section button{
+    top: 50%;
+  left: 50%;
+  transform: translateX(-50%,-50%);
+ opacity: 0;
+}
+.img-section:hover .btn{
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+ opacity: 1;
+ transition: all 1s;
+}
+.btn:hover{
+  color: #000 !important;
+}
+.row12{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+.row12 p{
+	margin:0;
+	overflow: hidden;
+}
+.row12 p span{
+    font-size: 40px;
+    color:#ffffff;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 46px;
+    display: none;
+}
+
+.row12 p span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+.row12 p span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+/* page2 styling  */
+.page2{
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 1vw 3vw;
+  
+}
+.p2-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+.blog-post img:hover{
+  filter: brightness(50%);
+}
+.cut-text { 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 60%;
+  height: 1.2em; 
+  white-space: nowrap;
+}
+/* page3 CSS  */
+.page3 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* background-color: #E9E9E9; */
+  padding: 0 3vw;
+ /* overflow: hidden; */
+ margin: 0 0;
+}
+.inner-section{
+  top: 8vmax;
+}
+.text-section{
+  position: relative;
+  /* top: 8vmax; */
+}
+.text-section h2{
+  font-size: 8vmax;
+}
+.btn-txt{
+  position: absolute;
+  right: 25%;
+  top: 60%;
+  transform: rotate(-18deg);
+}
+/* slider  */
+.card-container{
+  width: 100%;
+  /* max-width: 1120px; */
+}
+.slide-container{
+  overflow: hidden;
+}
+.card{
+  overflow: hidden;
+}
+.card .image-box{
+  height:100%;
+ 
+}
+.card .image-box img{
+  height: 100%;
+  width: 100%;
+}
+
+.card .card-body img{
+height: 40px;
+width: 40px;
+}
+.card .card-body .website-name{
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.card .card-body .website-name h4 a{
+    color: #000;
+}
+.card .card-body .website-name img{
+  border-radius: 50%;
+}
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+.page4 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #E9E9E9;
+  padding: 0 3vw; 
+  overflow-x: hidden;
+}
+.page5{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 3vw; 
+}
+.carousel-indicators{
+  bottom: -20%;
+  
+}
+/* table styling  */
+table th{
+  font-weight: 300;
+  font-size: 1.2 rem;
+}
+table tr{
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.256);
+}
+table tr:hover{
+  background-color: #dadada42;
+}
+table td,th{
+  padding: 30px;
+  font-weight: 300;
+  text-align: start;
+}
+.mobile-table{
+  display: none;
+}
+ /* footer  */
+
+ .rows{
+  flex: 1;
+ }
+ footer{
+  overflow: hidden;
+ }
+ /* menu styling  */
+ .menu{
+  position: fixed;
+ bottom: 2%;
+  left: 35%;
+  z-index: 99;
+  transition: all 2s ease;
+ }
+ .navbar{
+  width: 45%;
+  border-radius: 10px;
+ }
+ .col-content{
+  width: 45%;
+  border-radius: 10px;
+  display: flex;
+ }
+.part-content{
+  border-left: 1px solid #dadada42;
+  padding: 10px;
+}
+ .menu ul li{
+color: #fff;
+list-style-type: none;
+ }
+ /* arrow styling */
+ .top-arrow{
+  position: fixed;
+  bottom: 2%;
+   left: 2%;
+   z-index: 99;
+ }
+ .top-arrow a{
+  display: none;
+ }
+/* Blog-past styling  */
+.tech-list  li{
+ 
+  list-style-type:square;
+}
+.credit-list li{
+  list-style-type:none;
+}
+.part-content ul a{
+  text-decoration: none;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .mobile-table{
+    display: block;
+  }
+  .main-text h1 {
+    font-size: 6vmax;
+  }
+  .img-section {
+    height: 50%;
+  }
+  .page1-scroller .scroller-in h4 {
+    font-size: 1.5rem !important;
+  }
+.slider{
+  width: 100% !important;
+  text-align: center;
+  
+}
+.row12{
+  bottom: 10%;
+  left: 15%;
+}
+.home-text p span{
+font-size: 25px;
+line-height: 26px;   
+}
+}
+@media (max-width: 400px) {
+  .main-text h1 {
+    font-size: 5vmax;
+  }
+  .row12 p span{
+    font-size: 20px;
+    line-height: 23px;   
+}
+.carousel-indicators{
+  bottom: -30%;
+  
+}
+}
+@media (min-width:992px) {
+  .left-div h4{
+    width: 70%;
+  }
+ 
+}
+@media (max-width:1200px) {
+  .btn-txt{     
+    right: 20%;
+    top: 50%;
+    transform: rotate(-15deg);   
+  }
+  .text-section{
+    line-height: 35px;
+  }
+
+}
+@media (max-width:768px) {
+ 
+  .navbar{
+    width: 80%;
+   }
+   .col-content{
+    width: 80%;
+   }
+   .menu{
+   bottom: 2%;
+    left: 10%; 
+   }
+}
+@media (min-width:770px) {
+.post-details h2{
+  width: 50%;
+}
+.content-post{
+  width: 50%;
+}
+}
