@@ -1,6 +1,9 @@
 var tl = gsap.timeline();
 
 var counter=0;
+function showHiddenContent() {
+  document.getElementById('hiddenContent').style.display = 'block';
+}
 
 function time(){
     var a = 0
@@ -32,12 +35,14 @@ if (!localStorage.getItem("loaderShown")) {
           top: "-100vh",
           delay: 0.5,
           duration: 1.5,
+          //  onComplete: showHiddenContent()
       },
       "-=0.5" // Adjust the timeline to start the second animation earlier
   );
 } else {
   // If the loader has already been shown, hide it immediately
   document.getElementById("loader").style.display = "none";
+  // showHiddenContent();
 }
 
 
@@ -135,9 +140,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-function showHiddenContent() {
-  document.getElementById('hiddenContent').style.display = 'block';
-}
 
 // Set a timeout to call the function after 5000 milliseconds (5 seconds)
-setTimeout(showHiddenContent, 5000);
+// setTimeout(showHiddenContent, 5000);
